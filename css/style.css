@@ -1,1 +1,145 @@
 @import"./normalize.css";
+
+body{
+    font-family: 'Merriweather', serif;
+    
+}
+/* header styling */
+header{
+    text-align: center;
+}
+h1{
+    background-color:black;
+    color:white;
+    padding:30px;
+    margin:0;
+    font-size:2.5rem;
+}
+.head-description{
+    width:90%;
+    margin:0 auto;
+    padding:20px 0px;
+    border-bottom:5px solid black;
+}
+.head-description h2{
+    font-size:2.5rem;
+    font-weight:bolder;
+}
+.head-description p{
+    font-size:2rem;
+    color:gray;
+}
+/* main styling */
+.form-list{
+    width:90%;
+    margin:4px auto;
+    border-top:2px solid black;
+}
+.contact-info{
+    border:none;
+    padding-bottom:30px;
+    display:flex;
+    flex-direction: column;
+    
+}
+.contact-info legend{
+    padding-top:30px;
+    font-size:2.3rem;
+    font-weight:bolder;
+    margin-bottom:20px; 
+}
+.contact-border{
+    border-bottom:3px solid black;
+}
+label{
+    color:gray;
+    margin:20px 0px;
+    font-size:1.8rem;
+}
+input,select,textarea{
+    padding:25px 15px;
+    width:100%;
+    background-color:whitesmoke;
+    border:1px solid whitesmoke;
+    border-radius:5px;
+}
+input::placeholder{
+    color:lightgray;
+    font-style:italic;
+    text-align:right;
+    font-size:1.5rem;
+}
+.select-style select {
+    display:block;
+    height:63px;
+    font-size:2rem;
+    color:lightgray;
+} 
+option:selected{
+    color:lightgray;
+}
+#zip{
+    width:50%;
+}
+.news-selection{
+    margin:30px 0px;
+}
+.news-option>*{
+    display:block;
+}
+input[type="checkbox"],input[type="radio"]{
+    position:absolute;
+    left:-99px;
+}
+input[type="checkbox"] + .news-item, input[type="radio"] + .news-item{
+    position: relative;
+    cursor:pointer;
+}
+.news-item::before{
+    content:"";
+    width:15px;
+    height:15px;
+    margin-right:10px;
+    background-color:white;
+    border:0.5px solid black;
+    border-radius:4px;
+    display: inline-block;
+    text-align:left;
+    color:grey;
+}
+input[type="checkbox"]:checked +label:after, input[type="radio"]:checked +label:after{
+    content:"\2713";
+    position: absolute;
+    left:1px;
+    color:white;
+    font-size:13px;
+    background-color:rgb(7, 139, 248);
+    padding:1px 2px ;
+}
+.news-second-item::before{
+     border-radius:50%;
+}
+input[type="radio"]:checked +label:after{
+    content:"\2022";
+    border:1px solid rgb(7, 139, 248);
+    border-radius:50%;
+    padding: 0px 3px;
+}
+
+div button[type="submit"]{
+    width:100%;
+    margin-top:30px;
+    padding:20px;
+    font-size:2.5rem;
+    background-color:cadetblue;
+    color:white;
+    border-radius:5px;
+}
+/* footer styling */
+footer{
+    padding-bottom:60%;
+    text-align: center;
+    color:lightgray;
+    font-style:italic;
+    font-size:1.6rem;
+}
