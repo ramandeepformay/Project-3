@@ -23,38 +23,54 @@
     <!-- main starts -->
     <main>
         <form action="index.html" method="POST" class="form-list">
+            <!-- fielset 1 starts -->
             <fieldset class="contact-info contact-border">
                 <legend>Contact Information</legend>
-                <label for="name">Full Name</label>
-                <input type ="text" id="name" name="user" placeholder="Required" required>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Required" required>
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="address">
-                <label for="city">City</label>
-                <input type="text" id="city" name="city">
-                <label for="state">State</label>
-                <div class="select-style">
-                <select id="state" name="states">
-                    <optgroup>
-                        <option value="choose" selected>Choose State</option>
-                        <option value="ontario">Ontario</option>
-                        <option value="saskatchewan">Saskatchewan</option>
-                        <option value="nova-scotia">Nova Scotia</option>
-                        <option value="alberta">Alberta</option>
-                    </optgroup>
-                </select>
+                <div class="text clearfix">
+                    <label for="name">Full Name</label>
+                    <input type ="text" id="name" name="user" placeholder="Required" required>
+                </div>
+                <div class="text clearfix">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Required" required>
                 </div> 
-                <label for="zip">Zip Code</label>
-                <input type="text" id="zip" name="zip">
+                <div class="text clearfix">   
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Required" required>
+                </div>    
+                <div class="text clearfix">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="address" placeholder="Required" required>
+                </div>    
+                <div class="text clearfix">    
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="select-style text clearfix">
+                    <label for="state">State</label>
+                    <select id="state" name="states">
+                        <optgroup>
+                            <option value="choose" selected>Choose State</option>
+                            <option value="ontario">Ontario</option>
+                            <option value="saskatchewan">Saskatchewan</option>
+                            <option value="nova-scotia">Nova Scotia</option>
+                            <option value="alberta">Alberta</option>
+                        </optgroup>
+                    </select>
+                </div> 
+                <div class="text clearfix">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="zip">
+                </div>
             </fieldset>
 
+             <!-- fielset 1 ends -->
+              <!-- fielset 2 starts -->
             <fieldset class="contact-info">
                 <legend>Newsletter</legend>
-                <label class="news-selection">Select the newsletter you would like to receive</label>
+                <!-- checkboxes -->
                 <div class="news-option">
+                    <label>Select the newsletters you would like to receive</label>
                     <input type="checkbox" value="html" name="news" id="html" checked>
                     <label for="html" class="news-item">HTML News</label>
                     <input type="checkbox" value="css" name="news" id="css">
@@ -62,20 +78,23 @@
                     <input type="checkbox" value="javascript" name="news" id="javascript">
                     <label for="javascript" class="news-item">Javascript News</label>
                 </div> 
-                    <label class="news-selection">Newsletter format</label>
+                <!-- radio buttons -->
                 <div class="news-option">
+                    <label>Newsletter format</label>
                     <input type="radio" value="html-format" name="format" id="html-format" checked>
                     <label for="html-format" class="news-item news-second-item">HTML</label>
                     <input type="radio" value="Plain text" name="format" id="plain-text">
                     <label for="plain-text" class="news-item news-second-item">Plain text</label>
-                </div>        
-              
-                <label for="other" class="news-selection">Other topics you would like to hear about</label>
-                <textarea id="other" name="other-topics" rows="10"></textarea>
+                </div>
+                <div class="news-option">     
+                    <label for="other">Other topics you'd like to hear about</label>
+                    <textarea id="other" name="other-topics" rows="10"></textarea>
+                </div>   
                 <div>
                     <button type="submit">Sign Up</button>
                 </div>
             </fieldset>
+            <!-- fieldset 2 ends -->
         </form>
     </main>
     <!-- main ends -->
@@ -84,6 +103,5 @@
         <span>Copyright The Code Review</span>
     </footer>
     <!-- footer ends -->
-    
 </body>
 </html>
