@@ -37,27 +37,27 @@ h1{
     margin:4px auto;
     border-top:2px solid black;
 }
+.contact{
+    border-bottom:3px solid black;
+    background-color:#3e3e494d;
+}
 .contact-info{
     border:none;
-    padding-bottom:20px;
+    padding-bottom:25px;
     display:flex;
-    flex-direction:column;
-
+    flex-direction:column;  
 }
 .contact-info legend{
-    padding-top:5%;
+    padding-top:20px;
     font-size:2.3rem;
     font-weight:bolder;
-}
-.contact-border{
-    border-bottom:3px solid black;
-    background: #3e3e494d;
 }
 .text label, .news-option label{
     display:block;
     color:gray;
     margin:20px 0px;
-    font-size:1.8rem;
+    font-size:1.5rem;
+    letter-spacing:0.5px;
 }
 .text input, .text select, textarea{
     display:block;
@@ -72,7 +72,7 @@ h1{
     transition:all 0.5s ease;
 }
 textarea{
-    height:200px;
+    height:150px;
 }
 input:focus,textarea:focus{
     border-bottom:3px solid black;
@@ -88,11 +88,11 @@ input::placeholder{
 .select-style select {
     display:block;
     height:63px;
-    font-size:2rem;
+    font-size:1.6rem;
     color:lightgray;
 } 
 #zip{
-    width:30%;
+    width:40%;
 }
 .news-option{
     margin:30px 0px;
@@ -143,8 +143,8 @@ input[type="radio"]:checked +label:after{
 }
 div button[type="submit"]{
     width:100%;
-    padding:20px;
-    font-size:2.5rem;
+    padding:18px;
+    font-size:2rem;
     background-color:cadetblue;
     color:white;
     border-radius:5px;
@@ -173,10 +173,10 @@ footer{
         margin-top:20px;
     }
     .text label{
-        width:30%; 
+        width:25%; 
     }
     .text input, .text select{
-        width:70%;  
+        width:75%;  
     }
     input:focus,textarea:focus{
         border:2px solid black;
