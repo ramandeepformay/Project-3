@@ -45,22 +45,21 @@ h1{
 
 }
 .contact-info legend{
-    padding-top:10%;
+    padding-top:5%;
     font-size:2.3rem;
     font-weight:bolder;
 }
 .contact-border{
     border-bottom:3px solid black;
     background: #3e3e494d;
-  
 }
-label{
+.text label, .news-option label{
     display:block;
     color:gray;
     margin:20px 0px;
     font-size:1.8rem;
 }
-input,select,textarea{
+.text input, .text select, textarea{
     display:block;
     padding:10px;
     width:100%;
@@ -168,20 +167,16 @@ footer{
     .head-description,.form-list{
       width:80%;  
     }
-    .text{
+    .text label, .text input, .text select {
         display:inline-block;
-        margin:20px 0px;
+        margin-right:-5px;
+        margin-top:20px;
     }
     .text label{
-        width:30%;
-        float:left;
+        width:30%; 
     }
-    .text input,.text select{
-        width:70%;
-        float:right;
-    }
-    #zip{
-        float:left;
+    .text input, .text select{
+        width:70%;  
     }
     input:focus,textarea:focus{
         border:2px solid black;
